@@ -1,0 +1,107 @@
+// primary
+$Light-red: hsl(0, 100%, 67%,);
+$Orangey-yellow: hsl(39, 100%, 56%);
+$Green-teal: hsl(166, 100%, 37%);
+$Cobalt-blue: hsl(234, 85%, 45%);
+
+// gradients
+$Light-slate-blue: hsl(252, 100%, 67%);
+
+$Light-royal-blue: hsl(241, 81%, 54%);
+
+$Violet-blue: hsla(256, 72%, 46%, 1);
+
+$Persian-blue: hsla(241, 72%, 46%, 0);
+
+// neutral
+$White: hsl(0, 0%, 100%);
+$Pale-blue: hsl(221, 100%, 96%);
+$Light-lavender: hsl(241, 100%, 89%);
+$Dark-gray-blue: hsl(224, 30%, 27%);
+
+
+// ______
+
+// hero-section
+.hero-sec{
+    background: linear-gradient($Light-slate-blue,$Light-royal-blue);
+    display: flex;
+    flex-direction: column;
+    h1{
+        color: $Light-lavender;
+    }
+    h2{
+        color: $White;
+        background:linear-gradient($Violet-blue,$Persian-blue);
+        min-width:calc( 133.45/18) *1rem ;
+        min-height:calc( 128.6/18) *1rem ;
+        align-self: center;
+        border-radius: 50% ;
+        padding: 1.5rem;
+        span{
+            color:  hsla(241, 100%, 89%, 0.5);
+        }
+    }
+    h3{
+        color: $White;
+    }
+    p{
+        color: $Light-lavender;
+    }
+}
+
+// summary
+.summary-sec{
+    h3{
+        color: $Dark-gray-blue;
+    }
+
+    article:nth-of-type(1){
+        background-color: hsla(0, 100%, 67%, 0.104);
+        h4:nth-child(1){
+            color: $Light-red;
+        }
+
+    }
+    article:nth-of-type(2){
+        background-color: hsla(39, 100%, 56% ,0.104);
+        h4:nth-child(1){
+            color: $Orangey-yellow;
+        }
+    }
+    article:nth-of-type(3){
+        background-color: hsl(166, 100%, 37%,0.104);
+        h4:nth-child(1){
+            color: $Green-teal;
+        }
+    }
+    article:nth-of-type(4){
+        background-color: hsl(234, 85%, 45%,0.104);
+        margin-bottom: 2rem;
+        h4:nth-child(1){
+            color: $Cobalt-blue;
+        }
+    }
+
+    h4:nth-child(2){
+        color: $Light-lavender;
+    }
+    strong{
+        color: $Dark-gray-blue;
+    }
+    
+}
+
+button{
+    background-color: $Dark-gray-blue;
+    color: $White;
+    transition: all .5s ease;
+}
+
+button:hover{
+    background:linear-gradient($Light-slate-blue,$Light-royal-blue);
+    cursor: pointer;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

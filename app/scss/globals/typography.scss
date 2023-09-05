@@ -1,0 +1,86 @@
+@use 'sass:math';
+@font-face {
+    font-family: 'hank';
+    src: url(../../../assets/fonts/hankengrotesk-variablefont_wght-webfont.woff),
+        url(../../../assets/fonts/hankengrotesk-variablefont_wght-webfont.woff2);
+    font-weight: normal;
+    font-style: normal;    
+}
+
+$hank: 'hank';
+$light:500;
+$medium:700;
+$dark:800;
+
+html{
+    font-family:$hank ;
+    font-size: 18px;
+
+}
+.hero-sec{
+    padding: 2rem 3rem ;
+    h1{
+        font-size: .9rem;
+        margin-bottom: 1rem;
+    }
+    h2{
+        font-size: 2.3rem;
+        font-weight: $dark;
+        margin-bottom: 1.3rem;
+
+        span{
+            font-size: 0.7rem;
+            font-weight: $light;
+            display: block;
+        }
+    }
+    h3{
+        margin-bottom: .8rem;
+    }
+    p{
+        font-size: .8rem;
+    }
+}
+
+.summary-sec{
+    padding: 1.4rem;
+    h3{
+        text-align: left;
+        font-size: 1rem;
+    }
+    article{
+        display: flex;
+        // border: 1px solid #333;
+        justify-content: space-between;
+        padding: .6rem;
+        border-radius: .4rem;   
+        margin-bottom: 1rem;
+        margin-top: .3rem;
+
+        h4{
+            font-size: .9rem;
+            font-weight: $medium;
+        }
+    }
+    img{
+        margin-bottom: -.2rem;
+        margin-right: .4rem;
+    }
+}
+button{
+    font-weight: $dark;
+}
+
+
+.attribution {
+     font-size: calc(11 / 18) * 1rem; 
+     text-align: center; 
+}
+
+// breakpoints
+
+@media only screen and (min-width:700px){
+    html{
+        font-size: 19px;
+    }
+}
